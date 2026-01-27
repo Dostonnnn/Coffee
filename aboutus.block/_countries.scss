@@ -1,0 +1,24 @@
+.countries {
+  @include margin;
+  margin: 150px auto;
+  padding: 50px;
+  &-title {
+    @include title(25px, auto, #83888f);
+    margin-bottom: 100px;
+  }
+}
+.country {
+  @include flex;
+  width: 900px;
+  &-1 {
+    width: 250px;
+    height: 250px;
+    &-title {
+      @include title(25px, auto, #333d4b);
+      margin: 30px 0;
+    }
+    &-text {
+      @include text("Barlow", auto, #333d4b);
+    }
+  }
+}

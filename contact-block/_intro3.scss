@@ -1,0 +1,15 @@
+.intro3 {
+  @include margin;
+  @include back-img(url(../image/page3bitmap.png));
+  height: 400px;
+  border-radius: 10px;
+  padding: 50px 100px;
+  &-title {
+    @include title(50px, auto, #fff);
+    margin-top: 50px;
+  }
+  &-text {
+    @include text("Barlow", 400px, #fff);
+    margin: 40px 0;
+  }
+}

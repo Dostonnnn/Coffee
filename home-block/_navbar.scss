@@ -1,0 +1,19 @@
+.nav {
+  width: 1200px;
+  margin: auto;
+  padding: 30px 10px;
+  @include flex;
+  &-logo {
+    width: 250px;
+    height: 35px;
+  }
+  &-list {
+    width: 300px;
+    list-style: none;
+    @include flex;
+  }
+  &-link {
+    text-decoration: none;
+    @include nav-link;
+  }
+}
