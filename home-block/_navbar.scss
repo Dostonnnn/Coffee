@@ -16,4 +16,32 @@
     text-decoration: none;
     @include nav-link;
   }
+  &-burger {
+    display: none;
+  }
+  &-burger div {
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: #000;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .nav {
+    padding: 10px;
+    width: 90%;
+    &-logo {
+      width: 150px;
+      height: auto;
+    }
+    &-list {
+      display: none;
+    }
+    &-burger {
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+    }
+  }
 }
