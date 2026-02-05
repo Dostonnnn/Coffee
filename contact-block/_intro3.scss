@@ -13,3 +13,18 @@
     margin: 40px 0;
   }
 }
+
+@media only screen and (max-width: 450px) {
+  .intro3 {
+    width: 90%;
+    height: auto;
+    padding: 10px 40px;
+    &-title {
+      @include title(28px, auto, #fff);
+    }
+    &-text {
+      @include text("Barlow", auto, #fff);
+      margin: 40px 0;
+    }
+  }
+}

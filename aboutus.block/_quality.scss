@@ -1,26 +1,48 @@
 .quality {
-    @include margin;
-    border: 2px solid green;
-    height: 400px;
-    margin-top: 200px;
-    background-color: #2C343E;
+  @include margin;
+  border: 2px solid green;
+  height: 400px;
+  margin-top: 200px;
+  background-color: #2c343e;
+  border-radius: 10px;
+  padding: 50px;
+  text-align: left;
+  position: relative;
+  &-title {
+    @include title(40px, auto, #fff);
+  }
+  &-text {
+    @include text("Barlow", 600px, #fff);
+    margin: 30px 0;
+  }
+  &-img {
+    position: absolute;
+    top: -80px;
+    right: 50px;
+    width: 350px;
+    height: 350px;
     border-radius: 10px;
-    padding: 50px;
-    text-align: left;
-    position: relative;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .quality {
+    width: 90%;
+    height: auto;
+    padding-top: 150px;
     &-title {
-        @include title (40px, auto, #fff);
+      @include title(30px, auto, #fff);
     }
+
     &-text {
-        @include text ('Barlow', 600px, #fff);
-        margin: 30px 0;
+      @include text("Barlow", 100%, #fff);
     }
     &-img {
-        position: absolute;
-        top: -80px;
-        right: 50px;
-        width: 350px;
-        height: 350px;
-        border-radius: 10px;
+      top: -100px;
+      right: 50px;
+      width: 70%;
+      height: 200px;
+      border-radius: 10px;
     }
+  }
 }

@@ -43,3 +43,35 @@
     @include title(50px, auto, #fdd6ba);
   }
 }
+
+@media only screen and (max-width: 450px) {
+  .how3 {
+    width: 90%;
+    margin: 50px auto;
+    &-line {
+      width: 120px;
+    }
+    &-circle {
+      height: 20px;
+      width: 20px;
+    }
+    &-order {
+      width: 100%;
+      flex-direction: column;
+      gap: 50px;
+    }
+    &-order1 {
+      width: 100%;
+      text-align: center;
+      &-title {
+        @include title(28px, auto, #fff);
+      }
+      &-text {
+        @include text("Barlow", auto, #fff);
+      }
+    }
+    &-number {
+      @include title(35px, auto, #fdd6ba);
+    }
+  }
+}
