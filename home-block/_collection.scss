@@ -86,7 +86,7 @@
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media (min-width: 450px) and (max-width: 768px) {
   .collection {
     margin: 100px auto;
     width: 90%;

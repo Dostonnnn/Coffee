@@ -39,7 +39,7 @@
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media (min-width: 450px) and (max-width: 768px) {
   .intro {
     width: 90%;
     @include back-img(url(/image/bitmap.png));
