@@ -45,3 +45,21 @@
     }
   }
 }
+
+@media only screen and (max-width: 768px) {
+  .nav {
+    width: 90%;
+    &-logo {
+      width: 250px;
+      height: auto;
+    }
+    &-list {
+      width: 300px;
+      list-style: none;
+      @include flex;
+    }
+    &-burger {
+      display: none;
+    }
+  }
+}

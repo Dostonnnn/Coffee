@@ -28,7 +28,7 @@
     width: 250px;
     border-radius: 10px;
     &:hover {
-      background-color: #b7bfc9;
+      background-color: #6c87a8;
       transition: all 0.3s linear;
     }
   }
@@ -82,6 +82,55 @@
 
     &-text {
       @include text("Barlow", auto, #333d4b);
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .collection {
+    margin: 100px auto;
+    width: 90%;
+    display: flex;
+
+    &-back {
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      font-size: 90px;
+      line-height: normal;
+      text-align: center;
+      opacity: 0.1;
+      color: #83888f;
+    }
+    &-packs {
+      flex-direction: column;
+      margin-top: 30px;
+      gap: 40px;
+    }
+
+    &-pack {
+      display: flex;
+      align-items: center;
+      text-align: center;
+      width: inherit;
+      justify-content: space-between;
+    }
+
+    &-title {
+      @include title(25px, auto, #333d4b);
+      margin: 15px 0 10px;
+      text-align: left;
+    }
+
+    &-text {
+      @include text("Barlow", auto, #333d4b);
+      text-align: left;
+    }
+    &-textarea {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
     }
   }
 }

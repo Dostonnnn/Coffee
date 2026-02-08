@@ -98,3 +98,63 @@
     }
   }
 }
+
+@media only screen and (max-width: 768px) {
+  .why {
+    margin: 100px auto;
+    height: auto;
+    width: 90%;
+    background-color: #2c343e;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+    padding: 30px;
+    &-title {
+      @include title(35px, auto, #fff);
+      margin: auto;
+    }
+    &-text {
+      @include text("Barlow", auto, #fff);
+      margin: 30px auto;
+    }
+    &-groups {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      width: 100%;
+      top: 0;
+      left: 0;
+    }
+    &-group {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #0e8784;
+      border-radius: 10px;
+      width: 600px;
+      height: auto;
+      padding: 40px;
+      &:hover {
+        transition: all 0.3s linear;
+        background-color: #333d4b;
+      }
+      &-textarea {
+        width: 350px;
+        text-align: left;
+      }
+      &-title {
+        @include title(24px, auto, #fff);
+        margin: 10px auto;
+      }
+      &-text {
+        @include text("Barlow", auto, #fff);
+        margin: auto;
+      }
+      &-img {
+        height: 70px;
+        width: 70px;
+      }
+    }
+  }
+}
