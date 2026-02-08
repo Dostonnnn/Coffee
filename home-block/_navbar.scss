@@ -27,6 +27,24 @@
   }
 }
 
+@media only screen and (max-width: 768px) {
+  .nav {
+    width: 90%;
+    &-logo {
+      width: 250px;
+      height: auto;
+    }
+    &-list {
+      width: 300px;
+      list-style: none;
+      @include flex;
+    }
+    &-burger {
+      display: none;
+    }
+  }
+}
+
 @media only screen and (max-width: 450px) {
   .nav {
     padding: 10px;
@@ -42,24 +60,6 @@
       display: flex;
       flex-direction: column;
       gap: 3px;
-    }
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  .nav {
-    width: 90%;
-    &-logo {
-      width: 250px;
-      height: auto;
-    }
-    &-list {
-      width: 300px;
-      list-style: none;
-      @include flex;
-    }
-    &-burger {
-      display: none;
     }
   }
 }
