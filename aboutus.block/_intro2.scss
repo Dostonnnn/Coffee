@@ -29,3 +29,17 @@
     }
   }
 }
+
+@media (min-width: 450px) and (max-width: 768px) {
+  .intro2 {
+    width: 90%;
+    padding: 30px 50px;
+    &-title {
+      @include title(45px, auto, #fff);
+    }
+    &-text {
+      @include text("Barlow", 70%, #fff);
+      margin: 40px 0;
+    }
+  }
+}

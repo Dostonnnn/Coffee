@@ -162,30 +162,68 @@
       margin-top: 10px;
     }
   }
-  .summary {
-    background-color: #2c343e;
-    border-radius: 10px;
+}
+
+@media (min-width: 450px) and (max-width: 768px) {
+  .drink {
+    width: 90%;
+    padding: 30px;
+    &-left {
+      display: none;
+      width: 150px;
+      top: 20px;
+      left: 0;
+      bottom: 20px;
+      height: auto;
+      &-1 {
+        width: 150px;
+        height: auto;
+      }
+    }
+    &-line3 {
+      width: 150px;
+    }
+    &-num,
+    &-name {
+      @include text("Fraunces", auto, #0e8784);
+      font-size: 16px !important;
+    }
+  }
+  .drink-right {
+    width: 100%;
+  }
+  .choose {
+    margin-bottom: 100px;
     &-title {
-      @include title(16px, auto, #58606a);
+      @include title(25px, auto, #83888f);
+    }
+    text-align: left;
+  }
+  .chooses {
+    display: flex;
+    justify-content: space-between;
+
+  }
+  .choose1 {
+    text-align: center;
+    @include choose-box;
+    height: 230px;
+    width: 30%;
+    transition: all 0.3s linear;
+    &:hover {
+      background-color: antiquewhite;
+    }
+    &:active {
+      background-color: #0e8784;
+    }
+    &-title {
+      @include title(25px, auto, #333d4b);
     }
     &-text {
-      @include text("Fraunces", auto, #fff);
-      margin: 20px 0;
-      font-size: 20px;
-      line-height: 30px;
-      font-weight: 800;
-      &-high {
-        color: #0e8784;
-      }
-    }
-    &-btns {
-      display: flex;
-      justify-content: center;
-      margin-top: 50px;
-      &-btn {
-        @include button;
-        background: #0e8784;
-      }
+      @include text("Barlow", auto, #333d4b);
+      font-size: 14px !important;
+      line-height: normal;
+      margin-top: 30px;
     }
   }
 }

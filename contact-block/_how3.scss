@@ -75,3 +75,37 @@
     }
   }
 }
+
+@media (min-width: 450px) and (max-width: 768px) {
+  .how3 {
+    width: 100%;
+    margin: 100px auto;
+    &-line {
+      width: 210px;
+    }
+    &-circle {
+      height: 20px;
+      width: 20px;
+    }
+    &-order {
+      width: 100%;
+      gap: 30px;
+      align-items: baseline;
+    }
+    &-order1 {
+      width: 100%;
+      text-align: left;
+      &-title {
+        @include title(28px, auto, #fff);
+        text-align: left;
+      }
+      &-text {
+        @include text("Barlow", auto, #fff);
+        text-align: left;
+      }
+    }
+    &-number {
+      @include title(35px, auto, #fdd6ba);
+    }
+  }
+}

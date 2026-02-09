@@ -39,3 +39,28 @@
     text-align: center;
   }
 }
+
+@media (min-width: 450px) and (max-width: 768px) {
+  .countries {
+    width: 90%;
+    padding: 0;
+  }
+
+  .country {
+    width: 100%;
+    align-items: baseline;
+    justify-content: space-between;
+
+    &-1 {
+      width: 32%;
+      height: 100%;
+      &-title {
+        @include title(25px, 100%, #333d4b);
+        margin: 30px 0;
+      }
+      &-text {
+        @include text("Barlow", auto, #333d4b);
+      }
+    }
+  }
+}

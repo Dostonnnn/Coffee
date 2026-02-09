@@ -46,3 +46,26 @@
     }
   }
 }
+
+@media (min-width: 450px) and (max-width: 768px) {
+  .quality {
+    margin-top: 350px;
+    width: 90%;
+    padding-top: 150px;
+    text-align: center;
+    &-title {
+      @include title(40px, auto, #fff);
+    }
+
+    &-text {
+      @include text("Barlow", 100%, #fff);
+    }
+    &-img {
+      top: -50%;
+      right: 10%;
+      width: 80%;
+      height: 300px;
+      border-radius: 10px;
+    }
+  }
+}

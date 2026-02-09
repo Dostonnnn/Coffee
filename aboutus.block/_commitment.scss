@@ -37,3 +37,26 @@
     }
   }
 }
+
+@media (min-width: 450px) and (max-width: 768px) {
+  .commitment {
+    width: 90%;
+    padding: 0;
+    &-img {
+      width: 45%;
+      height: 500px;
+    }
+    &-textarea {
+      width: 50%;
+      text-align: left;
+    }
+    &-title {
+      @include title(30px, auto, #333d4b);
+      margin: 0;
+      margin-bottom: 20px;
+    }
+    &-text {
+      @include text("Barlow", auto, #333d4b);
+    }
+  }
+}
